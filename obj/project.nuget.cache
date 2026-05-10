@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "8f2wl0XnlfqZoUJLA48PLijQUiUgnyFi9THqsB0Zcx+YDSvKXzErrMFWb8PQ7T0otl1llWR0QnMg2aqlEPNo8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jacob\\source\\repos\\ClipboardSave\\ClipboardSave.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jacob\\.nuget\\packages\\windowsapicodepack-core\\1.1.2\\windowsapicodepack-core.1.1.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Das Paket \"WindowsAPICodePack-Core 1.1.2\" wurde nicht mit dem Projektzielframework \"net7.0-windows7.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "libraryId": "WindowsAPICodePack-Core",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
+}
