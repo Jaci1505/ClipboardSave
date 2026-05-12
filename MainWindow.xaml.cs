@@ -73,7 +73,8 @@ namespace ClipboardSave
         public static string showSaveFileDialog()
         {
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "PNG-Bild(*png)|*.png|JPG-Bild(*jpg)|*.jpg"; //nur jpg und png-Dateien zulassen
+            sfd.Filter = "PNG-Datei|*.png|JPG-Datei|*.jpg|BMP-Datei|*.bmp |GIF-Datei"
+                +    "|*.gif"; //erlaubte Dateiformate setzen
             sfd.InitialDirectory = "C:\\"; //starte im Verzeichnis C
             bool? result = sfd.ShowDialog();
             if (result == true) //etwas gespeichert (Pfad gewaehlt)
