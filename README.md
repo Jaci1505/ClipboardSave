@@ -25,6 +25,8 @@ Das Programm startet, liest automatisch das aktuelle Bild aus der Windows-Zwisch
 |--------|-------------|
 | PNG    | `.png`      |
 | JPEG   | `.jpg`      |
+| BMP    | `.BMP`      |
+| GIF    | `.gif`      |
 
 ## Fehlerbehandlung
 
