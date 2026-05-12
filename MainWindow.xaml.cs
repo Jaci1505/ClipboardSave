@@ -2,6 +2,7 @@
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -47,7 +48,15 @@ namespace ClipboardSave
                     {
                         BitmapEncoder encoder = new PngBitmapEncoder();
                         encoder.Frames.Add(BitmapFrame.Create(image));
-                        encoder.Save(fileStream); 
+                        encoder.Save(fileStream);
+                        new Process
+                        {
+                            StartInfo = new ProcessStartInfo(path)
+                            {
+                                UseShellExecute = true
+                            }
+                        }.Start();
+
                     }
 
                 }
@@ -73,7 +82,7 @@ namespace ClipboardSave
         public static string showSaveFileDialog()
         {
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "PNG-Datei|*.png|JPG-Datei|*.jpg|BMP-Datei|*.bmp |GIF-Datei"
+            sfd.Filter = "PNG-Datei|*.png|JPG-Datei|*.jpg|BMP-Datei|*.bmp|GIF-Datei"
                 +    "|*.gif"; //erlaubte Dateiformate setzen
             sfd.InitialDirectory = "C:\\"; //starte im Verzeichnis C
             bool? result = sfd.ShowDialog();
